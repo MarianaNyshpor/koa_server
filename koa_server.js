@@ -9,4 +9,4 @@ app.use(async (ctx) => {
     ctx.body = `${ctx.path.substr(1)}`;
   }
 });
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
